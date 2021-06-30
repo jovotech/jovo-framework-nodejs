@@ -12,4 +12,16 @@ export interface RasaIntent {
   confidence: number;
 }
 
-export interface RasaEntity {}
+export interface RasaEntity {
+  entity: string;
+  start: number;
+  end: number;
+  confidence_entity: number;
+  value: string;
+  extractor: string;
+  role?: string;
+  confidence_role?: number;
+  group?: string;
+  confidence_group?: number;
+  processors?: string[];
+}

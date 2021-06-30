@@ -3,7 +3,7 @@
   "private": true,
   "version": "4.0.0",
   "scripts": {
-    "postinstall": "npm run bootstrap",
+    "postinstall": "npm run   bootstrap",
     "setup:dev": "npm run bootstrap && npm run build",
     "setup:cli": "lerna run setup:cli && npm run setup:dev",
     "bootstrap": "lerna bootstrap --hoist --no-ci --nohoist=@babel/*",
